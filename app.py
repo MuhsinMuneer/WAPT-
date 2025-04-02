@@ -165,12 +165,12 @@ if uploaded_file:
 
         with col5:
             fig5 = px.bar(overdue_findings, barmode="stack", labels={"value": "Overdue Findings Count", "Business Area": "Business Area"},
-                          title="Overdue Findings by Business Area", color_discrete_sequence=["red", "black", "yellow"],text_auto=True)
+                          title="Overdue Findings by Business Area", color_discrete_sequence=["red", "orange", "yellow"],text_auto=True)
             st.plotly_chart(fig5, use_container_width=True)
 
         with col6:
             fig6 = px.bar(criticality_by_area, barmode="stack", labels={"value": "Severity Count", "Business Area": "Business Area"},
-                          title="Severity Distribution by Business Area", color_discrete_sequence=["blue", "green", "red"],text_auto=True)
+                          title="Severity Distribution by Business Area", color_discrete_sequence=["red", "orange", "yellow"],text_auto=True)
             st.plotly_chart(fig6, use_container_width=True)
 
         # Export Button
