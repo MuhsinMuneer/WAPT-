@@ -41,8 +41,8 @@ def analyze_excel_with_pivot(file, start_date=None, end_date=None, selected_sour
             "fo documenting high-level remediation plan(s)": "Finding Open",
             "fo reviewing finding": "Finding Open",
             "finding closed – security policy exception active": "Finding Closed",
-            "fo analyzing treatment options": "Finding Open",
-            "submitted to finding curator": "Finding Open"
+            "fo analyzing treatment options": "Finding Open"
+            
         }
         
         data["Mapped Status"] = data["Finding Status"].map(status_mapping)
