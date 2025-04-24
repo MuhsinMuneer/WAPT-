@@ -155,7 +155,7 @@ if uploaded_file:
             st.plotly_chart(fig3, use_container_width=True)
 
         with col4:
-            fig4 = px.bar(open_findings, barmode="stack", labels={"value": "Open Findings Count", "Business Area": "Business Area"},
+            fig4 = px.bar(open_findings, barmode="stack", labels={"value": "Open Findings Count (Due and Overdue)", "Business Area": "Business Area"},
                           title="Open Findings by Business Area", color_discrete_sequence=["red", "yellow", "orange"],text_auto=True)
             st.plotly_chart(fig4, use_container_width=True)
 
