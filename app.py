@@ -142,7 +142,7 @@ if uploaded_file:
 
         with col2:
             fig2 = px.bar(high_vuln_apps_by_BA, x=high_vuln_apps_by_BA.index, y=high_vuln_apps_by_BA.values,
-                          labels={"y": "High Severity Apps", "x": "Business Area"}, title="High Vulnerability Apps by Business Area", color_discrete_sequence=["red", "orange", "yellow"],text_auto=True)
+                          labels={"y": "High Severity Apps", "x": "Business Area"}, title="High Vulnerability Apps by Business Area", color_discrete_sequence=["red", "yellow", "orange"],text_auto=True)
             st.plotly_chart(fig2, use_container_width=True)
 
         st.markdown("### Findings Status Distribution")
@@ -151,12 +151,12 @@ if uploaded_file:
 
         with col3:
             fig3 = px.bar(closed_findings, barmode="stack", labels={"value": "Closed Findings Count", "Business Area": "Business Area"},
-                          title="Closed Findings by Business Area",color_discrete_sequence=["red", "orange", "yellow"],text_auto=True)
+                          title="Closed Findings by Business Area",color_discrete_sequence=["red", "yellow", "orange"],text_auto=True)
             st.plotly_chart(fig3, use_container_width=True)
 
         with col4:
             fig4 = px.bar(open_findings, barmode="stack", labels={"value": "Open Findings Count", "Business Area": "Business Area"},
-                          title="Open Findings by Business Area", color_discrete_sequence=["red", "orange", "yellow"],text_auto=True)
+                          title="Open Findings by Business Area", color_discrete_sequence=["red", "yellow", "orange"],text_auto=True)
             st.plotly_chart(fig4, use_container_width=True)
 
         st.markdown("### Overdue & Severity Distribution")
@@ -165,12 +165,12 @@ if uploaded_file:
 
         with col5:
             fig5 = px.bar(overdue_findings, barmode="stack", labels={"value": "Overdue Findings Count", "Business Area": "Business Area"},
-                          title="Overdue Findings by Business Area", color_discrete_sequence=["red", "orange", "yellow"],text_auto=True)
+                          title="Overdue Findings by Business Area", color_discrete_sequence=["red", "yellow", "orange"],text_auto=True)
             st.plotly_chart(fig5, use_container_width=True)
 
         with col6:
             fig6 = px.bar(criticality_by_area, barmode="stack", labels={"value": "Severity Count", "Business Area": "Business Area"},
-                          title="Severity Distribution by Business Area", color_discrete_sequence=["red", "orange", "yellow"],text_auto=True)
+                          title="Severity Distribution by Business Area", color_discrete_sequence=["red", "yellow", "orange"],text_auto=True)
             st.plotly_chart(fig6, use_container_width=True)
 
         # Export Button
